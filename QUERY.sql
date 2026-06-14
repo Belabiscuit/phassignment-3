@@ -156,3 +156,13 @@ from
   bookings
 where
   payment_status is null
+
+select
+  booking_id,
+  full_name,
+  fixture,
+  round(total_cost) as total_cost
+from
+  bookings
+  inner join users on users.user_id = bookings.user_id
+  inner join matches on matches.match_id = bookings.match_id
