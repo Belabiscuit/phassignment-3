@@ -166,3 +166,11 @@ from
   bookings
   inner join users on users.user_id = bookings.user_id
   inner join matches on matches.match_id = bookings.match_id
+
+select
+  users.user_id,
+  full_name,
+  booking_id
+from
+  users
+  left join bookings using (user_id)
