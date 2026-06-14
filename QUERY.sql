@@ -146,3 +146,13 @@ from
 where
   full_name ilike 'tanvir%'
   or full_name ilike '%haque';
+
+select
+  booking_id,
+  user_id,
+  match_id,
+  coalesce(payment_status, 'Action Required') as systematic_status
+from
+  bookings
+where
+  payment_status is null
