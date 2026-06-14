@@ -174,3 +174,23 @@ select
 from
   users
   left join bookings using (user_id)
+
+
+select
+  booking_id,
+  match_id,
+  round(total_cost) as total_cost
+from
+  bookings
+where
+  total_cost > (
+    select
+      avg(total_cost)
+    from
+      bookings
+  )
+
+
+
+
+
