@@ -190,6 +190,18 @@ where
       bookings
   )
 
+select
+  match_id,
+  fixture,
+  round(base_ticket_price) as base_ticket_price
+from
+  matches
+order by
+  base_ticket_price desc
+offset
+  1
+limit
+  2
 
 
 
