@@ -78,35 +78,35 @@ values
     101,
     'Real Madrid vs Barcelona',
     'Champions League',
-    150,
+    150.00,
     'Available'
   ),
   (
     102,
     'Man City vs Liverpool',
     'Premier League',
-    120,
+    120.00,
     'Selling Fast'
   ),
   (
     103,
     'Bayern Munich vs PSG',
     'Champions League',
-    130,
+    130.00,
     'Available'
   ),
   (
     104,
     'AC Milan vs Inter Milan',
     'Serie A',
-    90,
+    90.00,
     'Sold Out'
   ),
   (
     105,
     'Juventus vs Roma',
     'Serie A',
-    80,
+    80.00,
     'Available'
   );
 
@@ -120,11 +120,11 @@ insert into
     total_cost
   )
 values
-  (501, 1, 101, 'A-12', 'Confirmed', 150),
-  (502, 1, 102, 'B-04', 'Confirmed', 120),
-  (503, 2, 101, 'A-13', 'Confirmed', 150),
-  (504, 2, 101, NULL, NULL, 150),
-  (505, 3, 102, 'C-20', 'Pending',120);
+  (501, 1, 101, 'A-12', 'Confirmed', 150.00),
+  (502, 1, 102, 'B-04', 'Confirmed', 120.00),
+  (503, 2, 101, 'A-13', 'Confirmed', 150.00),
+  (504, 2, 101, NULL, NULL, 150.00),
+  (505, 3, 102, 'C-20', 'Pending',120.00);
 
 
 select
